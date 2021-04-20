@@ -90,6 +90,9 @@ header {
 header h1 {
   font-size: 1em;
 }
+.title {
+  color: darkblue;
+}
 
 main {
   flex: 1;
