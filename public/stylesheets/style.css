@@ -27,7 +27,7 @@ a:hover {
 button {
   background-color: #225ca3;
   border: 0;
-  padding: 1%;
+  /* padding: 1%; */
   color: white;
   font-weight: bold;
   transition: background-color 0.1s;
@@ -91,9 +91,14 @@ header h1 {
   font-size: 1em;
 }
 .title {
-  color: darkblue;
+  color: #225ca3;
 }
-
+.tag:not(body).is-white {
+  background-color: #fff;
+  color: #0a0a0a;
+  padding: 10px;
+  margin: 20px auto;
+}
 main {
   flex: 1;
   padding: 2% 4%;
@@ -153,7 +158,12 @@ main {
 .comment-form {
   margin-bottom: 5%;
 }
-
+.container {
+  flex-grow: 1;
+  margin: 20px;
+  position: relative;
+  width: auto;
+}
 .comment {
   padding: 1%;
   margin-bottom: 1%;
