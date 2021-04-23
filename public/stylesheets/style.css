@@ -43,7 +43,26 @@ button:hover {
   margin: 0;
   padding: 0;
 }
+.post-header {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #225ca3;
 
+  font-style: italic;
+}
+.notification a:not(.button):not(.dropdown-item) {
+  color: currentColor;
+  text-decoration: underline;
+}
+.notification.is-primary {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem;
+}
 textarea,
 input {
   padding: 0.5%;

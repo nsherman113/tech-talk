@@ -14,18 +14,21 @@
   </form>
 </section>
 
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
-
+<div class="container is-widescreen">
+  <div class="notification is-primary">
+    {{#if posts.length}}
+    <section>
+      <h2 class="post-header">Your Posts</h2>
+      <ol>
+        {{#each posts as |post|}}
+        <li>
+          {{> post-info post}}
+          <a href="/dashboard/edit/{{post.id}}" class="edit-link button is-link">Edit post</a>
+        </li>
+        {{/each}}
+      </ol>
+    </section>
+    {{/if}}
+  </div>
+</div>
 <script src="/javascript/add-post.js"></script>
